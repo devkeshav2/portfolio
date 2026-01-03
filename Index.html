@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keshav Kumar - Senior Java Backend Developer</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        header { background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); padding: 1rem 0; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        nav ul { display: flex; list-style: none; }
+        nav a { color: #333; text-decoration: none; padding: 0.5rem 1rem; border-radius: 5px; transition: background 0.3s; }
+        nav a:hover { background: #667eea; color: white; }
+        .hero { height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; background: url('image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%"><stop offset="0%" stop-color="%23667eea"/><stop offset="100%" stop-color="transparent"/></radialGradient></defs><rect width="100%" height="100%" fill="url(%23a)"/></svg>') no-repeat center/cover; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 1rem; animation: fadeInUp 1s ease; }
+        .hero p { font-size: 1.5rem; margin-bottom: 2rem; animation: fadeInUp 1s ease 0.2s both; }
+        .btn { background: #ff6b6b; color: white; padding: 1rem 2rem; border: none; border-radius: 50px; font-size: 1.1rem; cursor: pointer; transition: transform 0.3s, box-shadow 0.3s; text-decoration: none; display: inline-block; }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(255,107,107,0.4); }
+        section { padding: 5rem 0; }
+        h2 { text-align: center; font-size: 2.5rem; margin-bottom: 3rem; color: white; }
+        .about { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border-radius: 20px; padding: 3rem; margin: 2rem 0; color: white; }
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        .skill-card { background: rgba(255,255,255,0.2); padding: 2rem; border-radius: 15px; text-align: center; transition: transform 0.3s; }
+        .skill-card:hover { transform: scale(1.05); }
+        .projects { background: rgba(255,255,255,0.95); color: #333; }
+        .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; }
+        .project-card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .project-card:hover { transform: translateY(-10px); }
+        .project-card img { width: 100%; height: 200px; object-fit: cover; background: #ddd; }
+        .project-info { padding: 1.5rem; }
+        .project-info h3 { margin-bottom: 1rem; color: #667eea; }
+        footer { background: rgba(0,0,0,0.2); color: white; text-align: center; padding: 2rem; }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        @media (max-width: 768px) { .hero h1 { font-size: 2.5rem; } nav ul { flex-direction: column; } }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <h2 style="color: #667eea;">Keshav Kumar</h2>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h1>Senior Java Backend Developer</h1>
+            <p>4+ Years @ Infosys | Spring Boot + BigQuery Expert | Open to Zoho/Freshworks</p>
+            <a href="Keshav_Kumar_CV.pdf" class="btn" download>Download CV</a>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <div class="about">
+            <h2>About Me</h2>
+            <p>Keshav Kumar from Bhubaneswar, Odisha. Senior Java Backend Developer with 4+ years at Infosys and Nirmalya Labs, specializing in Spring Boot microservices, BigQuery analytics, PostgreSQL, and Liquibase migrations. Delivered D7 banking platform for European clients—transaction processing with 99.9% uptime. Passionate about scalable APIs, system design, and transitioning to product companies like Zoho/Freshworks for end-to-end ownership.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="container">
+        <h2 style="color: #333;">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Backend</h3>
+                <ul style="text-align: left;">
+                    <li>Java 21</li>
+                    <li>Spring Boot</li>
+                    <li>Hibernate JPA</li>
+                    <li>JWT Security</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Database</h3>
+                <ul style="text-align: left;">
+                    <li>BigQuery</li>
+                    <li>PostgreSQL</li>
+                    <li>MySQL</li>
+                    <li>Liquibase</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Tools</h3>
+                <ul style="text-align: left;">
+                    <li>Maven</li>
+                    <li>Jenkins CI/CD</li>
+                    <li>Swagger</li>
+                    <li>REST APIs</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Other</h3>
+                <ul style="text-align: left;">
+                    <li>Design Patterns</li>
+                    <li>Microservices</li>
+                    <li>GCP/AWS Basics</li>
+                    <li>Freelance (Shiprocket)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects container">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div style="background: linear-gradient(45deg, #667eea, #764ba2); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;">D7 Banking Demo</div>
+                <div class="project-info">
+                    <h3>D7 Banking Platform (Infosys)</h3>
+                    <p>Spring Boot microservices + BigQuery for European transactions. High-volume payments with Liquibase migrations.</p>
+                    <p><strong>Tech:</strong> Java 21, Spring Boot, BigQuery, JWT</p>
+                    <a href="#" class="btn" style="font-size: 0.9rem; padding: 0.5rem 1rem;">GitHub</a>
+                    <a href="#" class="btn" style="font-size: 0.9rem; padding: 0.5rem 1rem; margin-left: 0.5rem;">Live Demo</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div style="background: linear-gradient(45deg, #f093fb, #f5576c); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;">Order Mgmt</div>
+                <div class="project-info">
+                    <h3>Order Management System (Freelance)</h3>
+                    <p>Shiprocket/Razorpay integrations using Strategy pattern for payments.</p>
+                    <p><strong>Tech:</strong> Spring Boot, PostgreSQL, REST APIs</p>
+                    <a href="#" class="btn" style="font-size: 0.9rem; padding: 0.5rem 1rem;">GitHub</a>
+                    <a href="#" class="btn" style="font-size: 0.9rem; padding: 0.5rem 1rem; margin-left: 0.5rem;">Live Demo</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div style="background: linear-gradient(45deg, #4facfe, #00f2fe); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;">Analytics API</div>
+                <div class="project-info">
+                    <h3>BigQuery Analytics API</h3>
+                    <p>Caching with Decorator pattern for optimized queries.</p>
+                    <p><strong>Tech:</strong> Spring Boot, BigQuery, Caffeine Cache</p>
+                    <a href="#" class="btn" style="font-size: 0.9rem; padding: 0.5rem 1rem;">GitHub</a>
+                    <a href="#" class="btn" style="font-size: 0.9rem; padding: 0.5rem 1rem; margin-left: 0.5rem;">Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2 style="color: #333;">Get in Touch</h2>
+        <p style="text-align: center; font-size: 1.2rem; color: #666;">kumarkeshav.tech@gmail.com | +91 9123133048 | Bhubaneswar, Odisha</p>
+        <p style="text-align: center;">
+            <a href="https://linkedin.com/in/keshav-kumar-b1621520a" class="btn" style="margin: 0 1rem;">LinkedIn</a>
+            <a href="https://naukri.com" class="btn" style="margin: 0 1rem;">Naukri</a>
+            <a href="https://github.com/yourusername" class="btn">GitHub</a>
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Keshav Kumar. Built with HTML/CSS/JS. Ready for product companies 🚀</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            document.querySelector('header').style.background = window.scrollY > 100 ? 'rgba(255,255,255,0.98)' : 'rgba(255,255,255,0.95)';
+        });
+
+        // Animate on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeInUp 1s ease forwards';
+                }
+            });
+        });
+        document.querySelectorAll('.skill-card, .project-card').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
